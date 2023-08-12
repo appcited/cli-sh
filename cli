@@ -11,6 +11,6 @@ set -eu
 #  \_______/|__/|__/        |_______/ |__/  |__/
 #
 #  A minimal, customizable CLI written in shell
-#              cli-sh.dev | v0.1.0
+#              cli-sh.dev | v0.1.1
 
-./scripts/$1.sh
+./commands/$1.sh

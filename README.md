@@ -11,7 +11,7 @@
   \_______/|__/|__/        |_______/ |__/  |__/
 
   A minimal, customizable CLI written in shell
-              cli-sh.dev | v0.1.0
+              cli-sh.dev | v0.1.1
 ```
 
 ## Usage
@@ -22,18 +22,18 @@
     chmod +x ./cli
     ```
 
-2. Create a `scripts` directory in your project.
+2. Create a `commands` directory in your project.
 
     ```sh
-    mkdir ./scripts
+    mkdir ./commands
     ```
 
-3. Create a script for your command in the `scripts` directory.
+3. Create a script for your command in the `commands` directory.
 
     ```sh
-    echo '#!/bin/sh' > ./scripts/hello.sh
-    echo 'echo hello world!' >> ./scripts/hello.sh
-    chmod +x ./scripts/hello.sh
+    echo '#!/bin/sh' > ./commands/hello.sh
+    echo 'echo hello world!' >> ./commands/hello.sh
+    chmod +x ./commands/hello.sh
     ```
 4. Run your command.
 
@@ -53,4 +53,4 @@ needs.
 
 ### Command location
 
-Commands are defined as shell scripts in the `scripts` directory.
+Commands are defined as shell scripts in the `commands` directory.
