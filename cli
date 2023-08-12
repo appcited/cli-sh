@@ -11,6 +11,14 @@ set -eu
 #  \_______/|__/|__/        |_______/ |__/  |__/
 #
 #  A minimal, customizable CLI written in shell
-#              cli-sh.dev | v0.1.1
+#              cli-sh.dev | v0.2.0
+
+if [ -f "./commands/hooks/before.sh" ]; then
+    . ./commands/hooks/before.sh
+fi
 
 ./commands/$1.sh
+
+if [ -f "./commands/hooks/after.sh" ]; then
+    . ./commands/hooks/after.sh
+fi

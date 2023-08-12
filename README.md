@@ -11,7 +11,7 @@
   \_______/|__/|__/        |_______/ |__/  |__/
 
   A minimal, customizable CLI written in shell
-              cli-sh.dev | v0.1.1
+              cli-sh.dev | v0.2.0
 ```
 
 ## Usage
@@ -41,10 +41,6 @@
     ./cli hello
     ```
 
-## Examples
-
-- [Basic example](examples/basic/README.md)
-
 ## Convention over Configuration
 
 This minimal cli uses a convention over configuration approach. This means that
@@ -54,3 +50,17 @@ needs.
 ### Command location
 
 Commands are defined as shell scripts in the `commands` directory.
+
+## Features
+
+### Shell script commands
+
+Use shell scripts as building blocks for your cli commands.
+
+[Example](examples/basic/README.md)
+
+### Hooks
+
+Use hooks to intercept, extend and alter command execution.
+
+[Example](examples/hooks/README.md)
