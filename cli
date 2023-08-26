@@ -11,14 +11,18 @@ set -eu
 #  \_______/|__/|__/        |_______/ |__/  |__/
 #
 #  A minimal, customizable CLI written in shell
-#              cli-sh.dev | v0.3.0
+#              cli-sh.dev | v0.3.1
 
-if [ -f "./run/hooks/before.sh" ]; then
-    . ./run/hooks/before.sh
+if [ -f "./run/hooks/before" ]; then
+    . ./run/hooks/before
 fi
 
-$1
+if [ -d ${1} ]; then
+    "${1}/$(basename ${1})"
+else
+    ${1}
+fi
 
-if [ -f "./run/hooks/after.sh" ]; then
-    . ./run/hooks/after.sh
+if [ -f "./run/hooks/after" ]; then
+    . ./run/hooks/after
 fi

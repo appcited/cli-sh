@@ -6,3 +6,8 @@ This example shows the basic usage.
 ./cli run/hello
 # hello world!
 ```
+
+```sh
+./cli run/dev/world
+# hello dev world!
+```
