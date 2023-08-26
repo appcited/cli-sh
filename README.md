@@ -11,7 +11,7 @@
   \_______/|__/|__/        |_______/ |__/  |__/
 
   A minimal, customizable CLI written in shell
-              cli-sh.dev | v0.3.1
+              cli-sh.dev | v0.3.2
 ```
 
 ## Installation
@@ -74,6 +74,12 @@ Use any executable or script as building blocks for your cli commands.
 Use out-of-the-box autocompletion in all shell environments.
 
 [Example](examples/shell-autocompletion/README.md)
+
+### Display command tree
+
+Use the default command to display all available commands as tree.
+
+[Example](examples/display-command-tree/README.md)
 
 ### Hooks
 
