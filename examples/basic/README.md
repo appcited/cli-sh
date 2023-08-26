@@ -3,6 +3,6 @@
 This example shows the basic usage.
 
 ```sh
-./cli hello
+./cli run/hello.sh
 # hello world!
 ```

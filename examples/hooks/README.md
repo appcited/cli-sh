@@ -3,7 +3,7 @@
 This example shows the usage of hooks.
 
 ```sh
-./cli hello
+./cli run/hello.sh
 # before hook
 # hello world!
 # after hook
