@@ -1,6 +1,6 @@
 # Cli-sh
 
-```
+```text
             /$$ /$$                   /$$
            | $$|__/                  | $$
    /$$$$$$$| $$ /$$          /$$$$$$$| $$$$$$$
@@ -11,7 +11,7 @@
   \_______/|__/|__/        |_______/ |__/  |__/
 
   A minimal, customizable CLI written in shell
-              cli-sh.dev | v0.3.2
+              cli-sh.dev | v0.3.3
 ```
 
 ## Installation
@@ -37,6 +37,7 @@
     echo 'echo hello world!' >> run/hello
     chmod +x run/hello
     ```
+
 3. Run your command.
 
     ```sh

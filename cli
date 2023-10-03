@@ -11,18 +11,12 @@ set -eu
 #  \_______/|__/|__/        |_______/ |__/  |__/
 #
 #  A minimal, customizable CLI written in shell
-#              cli-sh.dev | v0.3.2
+#              cli-sh.dev | v0.3.3
 
 if [ -z "${1:-}" ]; then
     echo "`sed -n '3,14p' ${0}`\n"
 
-    find run/* | sort | awk -F/ '
-    {
-        for (i=2; i<NF; i++) 
-            printf("%4s", "|-- ")
-        print $NF
-    }
-    '
+    find run -type f
 
     exit 2
 fi

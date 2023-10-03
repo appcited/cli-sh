@@ -4,10 +4,9 @@ This example shows the basic usage.
 
 ```sh
 ./cli
+
 # ...
-# dev
-# |-- init
-# |-- |-- foo
-# |-- world
-# hello
+# run/dev/init/foo
+# run/dev/world
+# run/hello
 ```
