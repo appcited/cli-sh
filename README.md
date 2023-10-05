@@ -11,7 +11,7 @@
   \_______/|__/|__/        |_______/ |__/  |__/
 
   A minimal, customizable CLI written in shell
-              cli-sh.dev | v0.3.3
+              cli-sh.dev | v0.4.0
 ```
 
 ## Installation
@@ -69,6 +69,12 @@ Use commands with the same name as the directory to implement directory commands
 Use any executable or script as building blocks for your cli commands.
 
 [Example](examples/basic/README.md)
+
+### Pass command arguments
+
+Pass any arguments to the executed command.
+
+[Example](examples/pass-command-arguments/README.md)
 
 ### Shell autocompletion
 
