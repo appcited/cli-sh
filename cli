@@ -14,8 +14,6 @@ set -eu
 #              cli-sh.dev | v0.3.3
 
 if [ -z "${1:-}" ]; then
-    echo "`sed -n '3,14p' ${0}`\n"
-
     find run -type f
 
     exit 2
