@@ -76,11 +76,11 @@ Use out-of-the-box autocompletion in all shell environments.
 
 [Example](examples/shell-autocompletion/README.md)
 
-### Display command tree
+### Display available commands
 
-Use the default command to display all available commands as tree.
+Use the default command to display all available commands.
 
-[Example](examples/display-command-tree/README.md)
+[Example](examples/display-available-commands/README.md)
 
 ### Hooks
 
