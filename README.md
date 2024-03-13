@@ -11,7 +11,7 @@
   \_______/|__/|__/        |_______/ |__/  |__/
 
   A minimal, customizable CLI written in shell
-              cli-sh.dev | v0.4.0
+              cli-sh.dev | v0.5.0
 ```
 
 ## Installation
@@ -63,6 +63,12 @@ Use transparent filesystem routing for cli command structures.
 Use commands with the same name as the directory to implement directory commands.
 
 [Example](examples/directory-commands/README.md)
+
+### Wildcard commands
+
+Use wildcard paths to execute all matching commands.
+
+[Example](examples/wildcard-commands/README.md)
 
 ### Flexible commands
 
