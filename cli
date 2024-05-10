@@ -11,7 +11,7 @@ set -eu
 #  \_______/|__/|__/        |_______/ |__/  |__/
 #
 #  A minimal, customizable CLI written in shell
-#              cli-sh.dev | v0.5.0
+#              cli-sh.dev | v0.6.0
 
 # Display available commands, if no command is given
 if [ -z "${1:-}" ]; then
@@ -21,8 +21,8 @@ if [ -z "${1:-}" ]; then
 fi
 
 # Run script before command, if it exists
-if [ -f "./run/hooks/before" ]; then
-    . ./run/hooks/before
+if [ -f "./run/_before" ]; then
+    . ./run/_before
 fi
 
 # Run provided command with arguments
@@ -34,6 +34,6 @@ else
 fi
 
 # Run script after command, if it exists
-if [ -f "./run/hooks/after" ]; then
-    . ./run/hooks/after
+if [ -f "./run/_after" ]; then
+    . ./run/_after
 fi
