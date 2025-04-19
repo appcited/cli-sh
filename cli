@@ -1,8 +1,6 @@
 #!/bin/sh
 set -eu
 
-VERSION="0.7.0" # x-release-please-version
-
 #            /$$ /$$                   /$$
 #           | $$|__/                  | $$
 #   /$$$$$$$| $$ /$$          /$$$$$$$| $$$$$$$
@@ -13,7 +11,7 @@ VERSION="0.7.0" # x-release-please-version
 #  \_______/|__/|__/        |_______/ |__/  |__/
 #
 #  A minimal, customizable CLI written in shell
-#              cli-sh.dev | 0.6.0
+#                  cli-sh.dev
 
 # Display available commands, if no command is given
 if [ -z "${1:-}" ]; then

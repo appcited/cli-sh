@@ -4,12 +4,7 @@
     ".": {
       "release-type": "node",
       "bump-minor-pre-major": true,
-      "extra-files": [
-        {
-          "path": "/cli",
-          "type": "generic"
-        }
-      ]
+      "bump-patch-for-minor-pre-major": true
     }
   }
 }
