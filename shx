@@ -1,0 +1,41 @@
+#!/bin/sh
+set -eu
+
+#                  /$$
+#                 | $$
+#         /$$$$$$$| $$$$$$$  /$$   /$$
+#        /$$_____/| $$__  $$|  $$ /$$/
+#       |  $$$$$$ | $$  \ $$ \  $$$$/
+#        \____  $$| $$  | $$  / $$ $$
+#        /$$$$$$$/| $$  | $$ / $$/\ $$
+#       |_______/ |__/  |__/|___/  \__/
+#
+# A minimal, customizable CLI written in shell
+#                   shx.run
+
+VERSION="0.0.0" # x-release-please-version
+
+# Display available commands, if no command is given
+if [ -z "${1:-}" ]; then
+    find run -type f
+
+    exit 2
+fi
+
+# Run script before command, if it exists
+if [ -f "./run/_before" ]; then
+    . ./run/_before
+fi
+
+# Run provided command with arguments
+if [ -d ${1} ]; then
+    # When the command is a directory, run script with same name inside it
+    "${1}/$(basename ${1})" $(shift; echo ${@})
+else
+    echo "${@}" | xargs -n 1 sh -c 'test -f "$0" && sh -c $0'
+fi
+
+# Run script after command, if it exists
+if [ -f "./run/_after" ]; then
+    . ./run/_after
+fi
