@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.1](https://github.com/appcited/cli-sh/compare/cli-sh-v0.8.0...cli-sh-v0.8.1) (2025-04-21)
+
+
+### Bug Fixes
+
+* change tag name ([7a0385e](https://github.com/appcited/cli-sh/commit/7a0385ee4900eb930089961ce62da46e8ed43dd0))
+
 ## [0.8.0](https://github.com/appcited/cli-sh/compare/cli-sh-v0.7.0...cli-sh-v0.8.0) (2025-04-21)
 
 
