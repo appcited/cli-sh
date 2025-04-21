@@ -13,7 +13,7 @@ set -eu
 # A minimal, customizable CLI written in shell
 #                   shx.run
 
-VERSION="0.0.0" # x-release-please-version
+VERSION="0.1.0" # x-release-please-version
 
 # Display available commands, if no command is given
 if [ -z "${1:-}" ]; then
