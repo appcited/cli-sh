@@ -6,11 +6,12 @@ permissions:
   contents: write
   pull-requests: write
   issues: write
-name: release-please
+name: release
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: googleapis/release-please-action@v4
         id: release
         with:
