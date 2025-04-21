@@ -1,6 +1,6 @@
 # Cli-sh
 
-```
+```text
             /$$ /$$                   /$$
            | $$|__/                  | $$
    /$$$$$$$| $$ /$$          /$$$$$$$| $$$$$$$
@@ -11,10 +11,10 @@
   \_______/|__/|__/        |_______/ |__/  |__/
 
   A minimal, customizable CLI written in shell
-              cli-sh.dev | v0.1.0
+                  cli-sh.dev
 ```
 
-## Usage
+## Installation
 
 1. Copy the `cli` script to your project root and make it executable.
 
@@ -22,28 +22,27 @@
     chmod +x ./cli
     ```
 
-2. Create a `scripts` directory in your project.
+## Usage
+
+1. Create a `run` directory in your project.
 
     ```sh
-    mkdir ./scripts
+    mkdir run
     ```
 
-3. Create a script for your command in the `scripts` directory.
+2. Create a script for your command in the `run` directory.
 
     ```sh
-    echo '#!/bin/sh' > ./scripts/hello.sh
-    echo 'echo hello world!' >> ./scripts/hello.sh
-    chmod +x ./scripts/hello.sh
+    echo '#!/bin/sh' >> run/hello
+    echo 'echo hello world!' >> run/hello
+    chmod +x run/hello
     ```
-4. Run your command.
+
+3. Run your command.
 
     ```sh
-    ./cli hello
+    ./cli run/hello
     ```
-
-## Examples
-
-- [Basic example](examples/basic/README.md)
 
 ## Convention over Configuration
 
@@ -51,6 +50,52 @@ This minimal cli uses a convention over configuration approach. This means that
 you can use it without any configuration, but you can also customize it to your
 needs.
 
-### Command location
+## Features
 
-Commands are defined as shell scripts in the `scripts` directory.
+### Filesystem routing
+
+Use transparent filesystem routing for cli command structures.
+
+[Example](examples/filesystem-routing/README.md)
+
+### Directory commands
+
+Use commands with the same name as the directory to implement directory commands.
+
+[Example](examples/directory-commands/README.md)
+
+### Wildcard commands
+
+Use wildcard paths to execute all matching commands.
+
+[Example](examples/wildcard-commands/README.md)
+
+### Flexible commands
+
+Use any executable or script as building blocks for your cli commands.
+
+[Example](examples/basic/README.md)
+
+### Pass command arguments
+
+Pass any arguments to the executed command.
+
+[Example](examples/pass-command-arguments/README.md)
+
+### Shell autocompletion
+
+Use out-of-the-box autocompletion in all shell environments.
+
+[Example](examples/shell-autocompletion/README.md)
+
+### Display available commands
+
+Use the default command to display all available commands.
+
+[Example](examples/display-available-commands/README.md)
+
+### Hooks
+
+Use hooks to intercept, extend and alter command execution.
+
+[Example](examples/hooks/README.md)

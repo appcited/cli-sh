@@ -3,6 +3,6 @@
 This example shows the basic usage.
 
 ```sh
-./cli run/hello
-# hello world!
+./cli run/hello "argument world"
+# hello argument world!
 ```
